@@ -6,12 +6,12 @@ export default function NewsletterLarge() {
     <div className="newsletter-main-bg">
     <div className="p-10 py-12 flex items-center">
       <div className="newsletter-image-section w-2/5">
-        <img src='https://picsum.photos/400/400' alt='image'/>
+        <img src='https://picsum.photos/400/400' alt='icon'/>
         </div>
       <div className="newsletter-input-section w-3/5">
       <div className="newsletterLarge-text-section w-full flex items-end flex-col">
-        <h3 className="text-6xl font-bold mb-4 text-[#5C5C5C]">Sign up for our newsletter</h3>
-        <p className="text-3xl font-medium mt-11 mb-20 text-[#5C5C5C]">No spam, unsubscribe anytime,<br/> and always amazing content!</p>
+        <h3 className="text-6xl font-bold mb-4 newsLargeText">Sign up for our newsletter</h3>
+        <p className="text-3xl font-medium mt-11 mb-20 newsLargeText">No spam, unsubscribe anytime,<br/> and always amazing content!</p>
         </div>
         <form class="newsLetterInput flex items-end md:items-center p-3 rounded-xl">
           <label className="w-9/12">

@@ -29,6 +29,9 @@ body {
   --boxShadow: 0 20px 25px -5px rgb(255 255 255 / 0.1),
     0 8px 10px -6px rgb(255 255 255 / 0.1);
   --text-readmore: #ffffff;
+  --footer-text : #ffffff;
+  --footer-list-text : #e3e3e3;
+  --logo-text : #FCDC60;
 }
 
 :root {
@@ -40,7 +43,10 @@ body {
   --text-readmore: #2769a2;
   --newsletter-background: #e7eaed;
   --boxShadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --footer-text : #5c5c5c;
+  --footer-list-text : #000000;
+  --logo-text : #000000;
 }
 
 .header {
@@ -73,7 +79,7 @@ body {
   @apply pt-3 pb-10 text-3xl;
   color: var(--text-primary);
 }
-.cardAuthorName {
+.cardAuthorName,.trendingText ,.cardReadHeadline,.trendingHeading,.quickCardHeading{
   @apply mr-2;
   color: var(--text-primary);
 }
@@ -137,6 +143,10 @@ body {
 .newsLetterInput {
   background-color: var(--mainBackground);
 }
+/* News Large CSS */
+.newsLargeText{
+  color: var(--text-secondary);
+}
 /* ExploreMOre Section CSS */
 .exploreMore {
   background: var(--mainBackground);
@@ -144,4 +154,29 @@ body {
 }
 .exploreMoreText {
   color: var(--text-primary);
+}
+
+/* Quick Read CSS */
+.quickReads{
+  background-color: var(--mainBackground);
+}
+.quickreadcards-right-block{
+  background-color: var(--background);
+}
+/* Footer CSS */
+.footer{
+  background-color: var(--newsletter-background);
+}
+.footerHeadlines{
+  color: var(--footer-text);
+}
+.footerListText{
+  color: var(--footer-list-text);
+}
+.footerInput{
+  background-color: var(--mainBackground);
+}
+.sawoLogo{
+  color:var(--logo-text);
+
 }
