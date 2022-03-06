@@ -16,7 +16,7 @@ export default function SliderSection() {
   return (
     <section className="topPicks">
       <div className="p-10">
-        <h3 className="text-5xl">Top Picks</h3>
+        <h3 className="topPickHeading">Top Picks</h3>
         <div className="slider-block">
           <Slider {...settings}>
             {[1, 2, 3, 4, 5, 6].map((item, index) => (

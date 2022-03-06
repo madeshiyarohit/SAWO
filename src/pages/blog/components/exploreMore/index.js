@@ -5,8 +5,8 @@ export default function ExploreMore() {
     <div>
       <section className="exploreMore py-20">
         <div className="container mx-auto flex flex-col items-center">
-          <h2 className="text-7xl font-black">Want to explore more?</h2>
-          <h4 className="text-4xl mt-14 mb-14 font-bold">
+          <h2 className="exploreMoreText ">Want to explore more?</h2>
+          <h4 className="text-4xl mt-14 mb-14 font-bold exploreMoreText">
             Sign up for a <span className="font-black">SAWO</span> account & see
             our platform in action.
           </h4>
