@@ -18,3 +18,133 @@ body {
 .container{
   max-width: 1160px;
 }
+
+
+
+[data-theme="dark"]{
+  --mainBackground : #1F1F1F;
+  --background : #000000;
+  --text-primary : white;
+  --text-secondary : #888888;
+  --accent : darkred;
+  --text-gray : #898989;
+  --newsletter-background :#000000;
+  --boxShadow : 0 20px 25px -5px rgb( 255 255 255 / 0.1), 0 8px 10px -6px rgb(255 255 255 / 0.1);
+  --text-readmore : #ffffff;
+}
+
+:root{
+  --background : white;
+  --mainBackground : #F7F7F7;
+  --text-primary : black;
+  --text-secondary : #5C5C5C;
+  --accent : purple;
+  --text-gray : #898989;
+  --text-readmore : #2769A2;
+  --newsletter-background :#E7EAED;
+  --boxShadow :  0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+
+.header {
+  color: var(--text-primary);
+  background-color: var(--mainBackground);
+  font-size: large;
+  font-weight: bold;
+}
+.button {
+  color: var(--text-primary);
+  background-color: var(--mainBackground);
+  border: 2px var(--text-primary) solid;
+  float: right;
+}
+
+
+/* Card CSS */
+.card{
+  background: var(--background);
+  box-shadow: var(--boxShadow);
+  @apply rounded-2xl overflow-hidden  p-7  relative m-7;
+}
+.cardImage{
+  @apply rounded-lg mb-8 mr-0;
+}
+.cardCategory{
+  @apply  text-base;
+  color: var(--text-primary)
+}
+.cardHeadline{
+  @apply pt-3 pb-10 text-3xl;
+  color: var(--text-primary);
+}
+.cardAuthorName{
+  @apply mr-2;
+  color: var(--text-primary);
+}
+/* Featured Section CSS */
+.featured{
+  background-color: var(--mainBackground);
+}
+.featuredLeftBox{
+  @apply rounded-2xl overflow-hidden shadow-xl p-6;
+  background-color: var(--background);
+}
+.featuredRightBox{
+  @apply rounded-2xl overflow-hidden shadow-sm p-6 h-full;
+  background-color: var(--background);
+}
+.category{
+  @apply text-3xl mb-10  font-semibold;
+  color: var(--text-gray)
+}
+.featuredCategoryText{
+  @apply text-[16px] ;
+  color: var(--text-gray);
+}
+.featuredHeading{
+  @apply text-3xl mt-5 mb-6 font-semibold;
+  color: var(--text-primary);
+}
+.featuredText{
+  @apply text-ellipsis overflow-hidden text-[20px] ;
+  color: var(--text-primary);
+}
+.readMoreBtn{
+  @apply text-xl leading-6 mb-10 mt-5 text-[#2769A2];
+  color: var(--text-readmore) ;
+}
+.featuredPersonName{
+  @apply ml-4 ;
+  color: var(--text-primary);
+}
+.categoryItems{
+  @apply text-xl mt-4 mb-4;
+  color: var(--text-primary);
+}
+/* Slider CSS */
+.topPicks{
+  background-color: var(--mainBackground);
+}
+.topPickHeading{
+  @apply text-5xl;
+  color: var(--text-primary);
+}
+/* NewsLetter Small CSS */
+.newsletter-main-bg{
+  background-color: var(--newsletter-background);
+}
+.newsletter-text-section{
+  @apply  w-1/2;
+  color: var(--text-secondary);
+}
+.newsLetterInput{
+  background-color: var(--mainBackground);
+}
+/* ExploreMOre Section CSS */
+.exploreMore {
+  background: var(--mainBackground);
+  @apply text-7xl;
+}
+.exploreMoreText{
+  color: var(--text-primary);
+}

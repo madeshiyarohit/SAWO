@@ -2,19 +2,19 @@ import React from "react";
 
 export default function NewsletterSmall() {
   return (
-    <div className="newsletter-main-bg bg-[#E7EAED]">
+    <div className="newsletter-main-bg">
     <div className="p-10 py-12 flex items-center">
-      <div className="newsletter-text-section text-[#5C5C5C] w-1/2">
+      <div className="newsletter-text-section">
         <h3 className="text-5xl font-bold mb-4">Sign up for our newsletter</h3>
         <p className="text-3xl font-medium">No spam, unsubscribe anytime,<br/> and always amazing content!</p>
         </div>
       <div className="newsletter-input-section w-1/2">
-        <form class="flex items-end md:items-center bg-white p-3 rounded-xl">
+        <form class="newsLetterInput flex items-end md:items-center p-3 rounded-xl">
           <label className="w-9/12">
             <input
               id="email"
               type="email"
-              className="w-full p-3 rounded-xl outline-0 h-16 placeholder:font-bold"
+              className="w-full p-3 rounded-xl outline-0 h-16 placeholder:font-bold newsLetterInput"
               placeholder="Enter your Email address"
               required=""
               value=""
