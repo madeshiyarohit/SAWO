@@ -1,50 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800;900&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 .slick-list {
   padding-left: 0 !important;
   margin: auto -1.75rem !important;
 }
-.container{
+.container {
   max-width: 1160px;
 }
 
-
-
-[data-theme="dark"]{
-  --mainBackground : #1F1F1F;
-  --background : #000000;
-  --text-primary : white;
-  --text-secondary : #888888;
-  --accent : darkred;
-  --text-gray : #898989;
-  --newsletter-background :#000000;
-  --boxShadow : 0 20px 25px -5px rgb( 255 255 255 / 0.1), 0 8px 10px -6px rgb(255 255 255 / 0.1);
-  --text-readmore : #ffffff;
+[data-theme="dark"] {
+  --mainBackground: #1f1f1f;
+  --background: #000000;
+  --text-primary: white;
+  --text-secondary: #888888;
+  --text-gray: #898989;
+  --newsletter-background: #000000;
+  --boxShadow: 0 20px 25px -5px rgb(255 255 255 / 0.1),
+    0 8px 10px -6px rgb(255 255 255 / 0.1);
+  --text-readmore: #ffffff;
 }
 
-:root{
-  --background : white;
-  --mainBackground : #F7F7F7;
-  --text-primary : black;
-  --text-secondary : #5C5C5C;
-  --accent : purple;
-  --text-gray : #898989;
-  --text-readmore : #2769A2;
-  --newsletter-background :#E7EAED;
-  --boxShadow :  0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+:root {
+  --background: white;
+  --mainBackground: #f7f7f7;
+  --text-primary: black;
+  --text-secondary: #5c5c5c;
+  --text-gray: #898989;
+  --text-readmore: #2769a2;
+  --newsletter-background: #e7eaed;
+  --boxShadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
-
 
 .header {
   color: var(--text-primary);
@@ -59,85 +56,85 @@ body {
   float: right;
 }
 
-
 /* Card CSS */
-.card{
+.card {
   background: var(--background);
   box-shadow: var(--boxShadow);
   @apply rounded-2xl overflow-hidden  p-7  relative m-7;
 }
-.cardImage{
+.cardImage {
   @apply rounded-lg mb-8 mr-0;
 }
-.cardCategory{
-  @apply  text-base;
-  color: var(--text-primary)
+.cardCategory {
+  @apply text-base;
+  color: var(--text-primary);
 }
-.cardHeadline{
+.cardHeadline {
   @apply pt-3 pb-10 text-3xl;
   color: var(--text-primary);
 }
-.cardAuthorName{
+.cardAuthorName {
   @apply mr-2;
   color: var(--text-primary);
 }
 /* Featured Section CSS */
-.featured{
+.featured {
   background-color: var(--mainBackground);
 }
-.featuredLeftBox{
+.featuredLeftBox {
   @apply rounded-2xl overflow-hidden shadow-xl p-6;
   background-color: var(--background);
 }
-.featuredRightBox{
+.featuredRightBox {
   @apply rounded-2xl overflow-hidden shadow-sm p-6 h-full;
   background-color: var(--background);
 }
-.category{
+.category {
   @apply text-3xl mb-10  font-semibold;
-  color: var(--text-gray)
-}
-.featuredCategoryText{
-  @apply text-[16px] ;
   color: var(--text-gray);
 }
-.featuredHeading{
+.featuredCategoryText {
+  @apply text-[16px];
+  color: var(--text-gray);
+}
+.featuredHeading {
   @apply text-3xl mt-5 mb-6 font-semibold;
   color: var(--text-primary);
 }
-.featuredText{
-  @apply text-ellipsis overflow-hidden text-[20px] ;
+.featuredText {
+  @apply text-ellipsis overflow-hidden text-[20px];
   color: var(--text-primary);
 }
-.readMoreBtn{
+.readMoreBtn {
   @apply text-xl leading-6 mb-10 mt-5 text-[#2769A2];
-  color: var(--text-readmore) ;
+  color: var(--text-readmore);
 }
-.featuredPersonName{
-  @apply ml-4 ;
+.featuredPersonName {
+  @apply ml-4;
   color: var(--text-primary);
 }
-.categoryItems{
+.categoryItems {
   @apply text-xl mt-4 mb-4;
   color: var(--text-primary);
 }
 /* Slider CSS */
-.topPicks{
+.topPicks {
   background-color: var(--mainBackground);
 }
-.topPickHeading{
+.topPickHeading {
   @apply text-5xl;
+  font-weight: bold;
   color: var(--text-primary);
 }
 /* NewsLetter Small CSS */
-.newsletter-main-bg{
+.newsletter-main-bg {
   background-color: var(--newsletter-background);
 }
-.newsletter-text-section{
-  @apply  w-1/2;
+.newsletter-text-section {
+  @apply w-1/2;
   color: var(--text-secondary);
 }
-.newsLetterInput{
+.newsLetterInput {
   background-color: var(--mainBackground);
 }
 /* ExploreMOre Section CSS */
@@ -145,6 +142,6 @@ body {
   background: var(--mainBackground);
   @apply text-7xl;
 }
-.exploreMoreText{
+.exploreMoreText {
   color: var(--text-primary);
 }
