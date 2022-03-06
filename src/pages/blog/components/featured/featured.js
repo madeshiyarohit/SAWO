@@ -48,7 +48,7 @@ export default function Featured() {
               <li>
                 <div className="categoryItems">
                   <span>
-                    <i class="fa-solid fa-4"></i>
+                    <i className="fa-solid fa-4"></i>
                   </span>
                   Developers
                 </div>
