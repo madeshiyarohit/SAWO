@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/layout/layout";
 import Blog from "./pages/blog/blog";
 import useLocalStorage from "use-local-storage";
-
+import Single from "./pages/single/single";
 
 
 function App() {
@@ -24,6 +24,7 @@ const switchTheme = () => {
       <Layout themeToggle={switchTheme}>
         <Switch>
           <Route path="/" exact component={Blog} />
+          <Route path="/single" component={Single} />
         </Switch>
       </Layout>
     </BrowserRouter>
