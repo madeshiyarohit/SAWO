@@ -18,7 +18,10 @@ body {
 .container {
   max-width: 1160px;
 }
-
+.banner-card-main-bg{
+  transform: translate(-50%);
+  background: #ffffff3b;
+}
 [data-theme="dark"] {
   --mainBackground: #1f1f1f;
   --background: #000000;
