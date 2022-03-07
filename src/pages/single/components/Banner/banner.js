@@ -3,7 +3,7 @@ import BannerText from "../banner-text/bannertext";
 import BannerCard from "../../../../components/banner-card/bannercard";
 export default function Banner() {
     return (
-        <div className="banner-main-bg mt-8">
+        <div className="banner-main-bg pt-8">
             <div className="container my-0 mx-auto">
                 <div className="banner-main-block">
                     <div className="banner-image-block relative">

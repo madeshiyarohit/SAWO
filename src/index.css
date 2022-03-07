@@ -35,6 +35,7 @@ body {
   --footer-text : #ffffff;
   --footer-list-text : #e3e3e3;
   --logo-text : #FCDC60;
+  --single-post-text : #ffffff;
 }
 
 :root {
@@ -50,6 +51,7 @@ body {
   --footer-text : #5c5c5c;
   --footer-list-text : #000000;
   --logo-text : #000000;
+  --single-post-text : #707070;
 }
 
 .header {
@@ -173,7 +175,7 @@ body {
 .footerHeadlines{
   color: var(--footer-text);
 }
-.footerListText{
+.footerListText,.singlePageNewsLetter{
   color: var(--footer-list-text);
 }
 .footerInput{
@@ -182,4 +184,20 @@ body {
 .sawoLogo{
   color:var(--logo-text);
 
+}
+/*Single page CSS  */
+.banner-main-bg{
+  background: var(--mainBackground);
+}
+.singlePostDescription{
+  color: var(--single-post-text);
+}
+.singlePageCardDescription{
+  color: var(--text-primary);
+}
+.review-main-bg{
+  background-color: var(--newsletter-background);
+}
+.singlePageGap{
+  background-color: var(--mainBackground);
 }
