@@ -12,11 +12,22 @@ export default function SliderSection() {
     centerMode: true,
     centerPadding: "60px",
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      }
+    ]
   };
   return (
     <section className="topPicks">
       <div className="p-10">
-        <h3 className="topPickHeading">Top Picks</h3>
+        <h3 className="topPickHeading sm:text-3xl md:text-5xl">Top Picks</h3>
         <div className="slider-block">
           <Slider {...settings}>
             {[1, 2, 3, 4, 5, 6].map((item, index) => (

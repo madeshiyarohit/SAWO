@@ -17,6 +17,7 @@ body {
 }
 .container {
   max-width: 1160px;
+  width: 90%;
 }
 .banner-card-main-bg{
   transform: translate(-50%);
@@ -200,4 +201,16 @@ body {
 }
 .singlePageGap{
   background-color: var(--mainBackground);
+}
+
+/*Blog Page Media Queries*/
+/*Feature Secton*/
+@media only screen and (max-width:640px){
+  .feature-right-block {
+    display: none;
+  }
+  .feature-left-block{
+    grid-column-start: 1;
+  grid-column-end: 5;
+  }
 }
