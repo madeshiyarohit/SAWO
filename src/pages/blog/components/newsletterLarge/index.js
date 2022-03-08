@@ -10,7 +10,7 @@ export default function NewsletterLarge() {
         </div>
       <div className="newsletter-input-section lg:w-3/5 sm:w-full">
       <div className="newsletterLarge-text-section w-full flex lg:items-end sm:items-center flex-col">
-        <h3 className="lg:text-6xl sm:text-4xl font-bold mb-4 sm:mt-9 lg:mt-0 newsLargeText">Sign up for our newsletter</h3>
+        <h3 className="lg:text-6xl sm:text-3xl font-bold mb-4 sm:mt-9 lg:mt-0 newsLargeText">Sign up for our newsletter</h3>
         <p className="lg:text-3xl sm:text-2xl lg:text-left sm:text-right font-medium lg:mt-11 lg:mb-20 sm:mt-2.5 sm:mb-8 newsLargeText">No spam, unsubscribe anytime,<br/> and always amazing content!</p>
         </div>
         <form class="newsLetterInput flex md:items-center p-3 rounded-xl">
