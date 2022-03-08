@@ -10,7 +10,7 @@ export default function Review() {
                             <img
                                 src="https://picsum.photos/148/148"
                                 className="rounded-full"
-                                alt="image" />
+                                alt="icon" />
                             <div className="review-text-block ml-12">
                                 <h4 className="font-bold text-3xl mb-5 singlePageNewsLetter">Ayushi Nigam</h4>
                                 <p className="font-bold text-2xl text-[#707070]">@lets.talk.product</p>

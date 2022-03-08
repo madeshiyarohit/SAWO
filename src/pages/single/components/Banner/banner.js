@@ -10,7 +10,7 @@ export default function Banner() {
                     <img
                         className="rounded-3xl w-full"
                         src="https://picsum.photos/1148/567"
-                        alt="image"
+                        alt="icon"
                     />
                     <BannerCard/>
                     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function NewsletterSmall() {
+  const nothing = ()=>{}
   return (
     <div className="newsletter-main-bg">
     <div className="p-10 py-12 flex items-center">
@@ -18,6 +19,7 @@ export default function NewsletterSmall() {
               placeholder="Enter your Email address"
               required=""
               value=""
+              onChange={nothing}
             />
           </label>
           <div className="newsletter-btn-section w-3/12">
