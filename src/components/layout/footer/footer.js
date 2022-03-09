@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="py-10 px-[60px] grid grid-cols-3">
+      <div className="py-10 px-[60px] grid grid-cols-4">
         <div className="lg:col-span-1 sm:col-span-2">
           <h2 className="text-3xl font-bold footerHeadlines"><span className="sawoLogo">Sawo</span>Lab</h2>
           <h3 className="mt-6 font-bold footerHeadlines text-xl">Support</h3>
@@ -14,8 +14,8 @@ export default function Footer() {
             </span>
           </p>
         </div>
-        <div className="flex lg:col-span-1 sm:col-span-2">
-          <div className="pl-6">
+        <div className="flex lg:col-span-1 sm:col-span-1 justify-center">
+          <div>
             <h2 className="pb-6 footerHeadlines  font-extrabold text-xl">
               Company
             </h2>
@@ -26,7 +26,9 @@ export default function Footer() {
               <li className="py-1 footerListText opacity-50">API Status</li>
             </ul>
           </div>
-          <div className="px-12">
+        </div>
+        <div className="flex lg:col-span-1 sm:col-span-1">
+          <div className="pr-12">
             <h2 className="pb-6 footerHeadlines font-extrabold text-xl">
               Resources
             </h2>
@@ -40,12 +42,23 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col lg:col-span-1 sm:col-span-2">
+        <div className="flex lg:pt-0 sm:pt-11 lg:flex-col lg:justify-start sm:justify-between sm:flex-row lg:col-span-1 sm:col-span-4">
+          <div>
           <h2 className="pb-3 footerHeadlines  font-extrabold text-xl">
             Keep Connected
           </h2>
-          <div>Social Icons Come Here !!!</div>
-          <p className="pt-8 text-xl footerHeadlines leading-10">
+          <div>
+            <ul className="flex">
+              <li className="mx-3"><img src="../../../../public/assets/icons8-discord-120.png"/></li>
+              <li className="mx-3"><img src="../../../../public/assets/icons8-discord-120.png"/></li>
+              <li className="mx-3"><img src="../../../../public/assets/icons8-discord-120.png"/></li>
+              <li className="mx-3"><img src="../../../../public/assets/icons8-discord-120.png"/></li>
+              <li className="mx-3"><img src="../../../../public/assets/icons8-discord-120.png"/></li>
+            </ul>
+          </div>
+          </div>
+          <div>
+          <p className="lg:pt-8 sm:pt-0 text-xl footerHeadlines leading-10">
             or subscribe to our newsletters
           </p>
           <div className="pt-8">
@@ -58,6 +71,7 @@ export default function Footer() {
               Submit
             </button>
           </div>
+          </div>
         </div>
       </div>
 
@@ -65,9 +79,9 @@ export default function Footer() {
         <p className="text-lg leading-2 footerHeadlines font-medium">2021 Sawolabs</p>
         <div>
           <ul className="flex">
-            <li className="pr-6 text-lg leading-2 footerListText font-normal">Terms and Condition</li>
-            <li className="pr-6 text-lg leading-2 footerListText font-normal">Sitemap</li>
-            <li className="pr-6 text-lg leading-2 footerListText font-normal">Privacy Policy</li>
+            <li className="pr-6 text-lg leading-2 footerListText lg:text-lg sm:text-sm">Terms and Condition</li>
+            <li className="pr-6 text-lg leading-2 footerListText lg:text-lg sm:text-sm">Sitemap</li>
+            <li className="pr-6 text-lg leading-2 footerListText lg:text-lg sm:text-sm">Privacy Policy</li>
           </ul>
         </div>
       </div>
