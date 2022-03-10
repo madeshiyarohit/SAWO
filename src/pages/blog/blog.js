@@ -10,15 +10,15 @@ export default function Blog() {
     <div>
       <Featured />
       <SliderSection />
-      <NewsletterLarge/>
-      <QuickReads/>
+      <NewsletterLarge />
+      <QuickReads />
       <SliderSection />
       <SliderSection />
       <SliderSection />
-      <NewsletterSmall/>
-      <QuickReads/>
+      <NewsletterSmall />
+      <QuickReads />
       <SliderSection />
-      <ExploreMore/>
+      <ExploreMore />
     </div>
   );
 }

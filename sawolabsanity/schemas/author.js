@@ -84,6 +84,16 @@ export default {
           scheme: ["http", "https", "mailto", "tel"],
         }),
     },
+    {
+      name : "tags",
+      type : "array",
+      of : [
+          {type : "string"},
+      ],
+      options : {
+          layout : "tags",
+      }
+  }
   ],
   preview: {
     select: {
