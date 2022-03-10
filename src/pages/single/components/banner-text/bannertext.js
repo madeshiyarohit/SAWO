@@ -2,7 +2,7 @@ import React from "react";
 export default function BannerText() {
   return (
     <div className="banner-text-main-block">
-      <p className="singlePostDescription leading-[60px] mt-72 pb-24 text-4xl text-center font-semibold">
+      <p className="singlePostDescription md:leading-[60px] md:mt-72 md:pb-24 md:text-3xl sm:text-xl sm:mt-52 sm:mb-4 text-center font-semibold">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
