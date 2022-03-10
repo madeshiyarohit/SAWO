@@ -19,7 +19,7 @@ body {
   max-width: 1160px;
   width: 90%;
 }
-.banner-card-main-bg{
+.banner-card-main-bg {
   transform: translate(-50%);
   background: #ffffff3b;
 }
@@ -33,10 +33,10 @@ body {
   --boxShadow: 0 20px 25px -5px rgb(255 255 255 / 0.1),
     0 8px 10px -6px rgb(255 255 255 / 0.1);
   --text-readmore: #ffffff;
-  --footer-text : #ffffff;
-  --footer-list-text : #e3e3e3;
-  --logo-text : #FCDC60;
-  --single-post-text : #ffffff;
+  --footer-text: #ffffff;
+  --footer-list-text: #e3e3e3;
+  --logo-text: #fcdc60;
+  --single-post-text: #ffffff;
 }
 
 :root {
@@ -48,11 +48,11 @@ body {
   --text-readmore: #2769a2;
   --newsletter-background: #e7eaed;
   --boxShadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-  0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --footer-text : #5c5c5c;
-  --footer-list-text : #000000;
-  --logo-text : #000000;
-  --single-post-text : #707070;
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --footer-text: #5c5c5c;
+  --footer-list-text: #000000;
+  --logo-text: #000000;
+  --single-post-text: #707070;
 }
 
 .header {
@@ -85,7 +85,11 @@ body {
   @apply pt-3 pb-10 text-3xl;
   color: var(--text-primary);
 }
-.cardAuthorName,.trendingText ,.cardReadHeadline,.trendingHeading,.quickCardHeading{
+.cardAuthorName,
+.trendingText,
+.cardReadHeadline,
+.trendingHeading,
+.quickCardHeading {
   @apply mr-2;
   color: var(--text-primary);
 }
@@ -150,7 +154,7 @@ body {
   background-color: var(--mainBackground);
 }
 /* News Large CSS */
-.newsLargeText{
+.newsLargeText {
   color: var(--text-secondary);
 }
 /* ExploreMOre Section CSS */
@@ -163,42 +167,79 @@ body {
 }
 
 /* Quick Read CSS */
-.quickReads{
+.quickReads {
   background-color: var(--mainBackground);
 }
-.quickreadcards-right-block{
+.quickreadcards-right-block {
   background-color: var(--background);
 }
 /* Footer CSS */
-.footer{
+.footer {
   background-color: var(--newsletter-background);
 }
-.footerHeadlines{
+.footerHeadlines {
   color: var(--footer-text);
 }
-.footerListText,.singlePageNewsLetter{
+.footerListText,
+.singlePageNewsLetter {
   color: var(--footer-list-text);
 }
-.footerInput{
+.footerInput {
   background-color: var(--mainBackground);
 }
-.sawoLogo{
-  color:var(--logo-text);
-
+.sawoLogo {
+  color: var(--logo-text);
 }
 /*Single page CSS  */
-.banner-main-bg{
+.banner-main-bg {
   background: var(--mainBackground);
 }
-.singlePostDescription{
+.singlePostDescription {
   color: var(--single-post-text);
 }
-.singlePageCardDescription{
+.singlePageCardDescription {
   color: var(--text-primary);
 }
-.review-main-bg{
+.review-main-bg {
   background-color: var(--newsletter-background);
 }
-.singlePageGap{
+.singlePageGap {
   background-color: var(--mainBackground);
+}
+
+/* Mega Menu */
+.mega-menu {
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  z-index: 99;
+}
+
+.toggleable > label:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.toggle-input {
+  display: none;
+}
+.toggle-input:not(checked) ~ .mega-menu {
+  display: none;
+}
+
+.toggle-input:checked ~ .mega-menu {
+  display: block;
+}
+
+.toggle-input:checked ~ label:after {
+  content: "\25B2";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
 }

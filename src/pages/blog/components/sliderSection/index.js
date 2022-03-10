@@ -21,10 +21,10 @@ export default function SliderSection() {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
-        }
-      }
-    ]
+          dots: false,
+        },
+      },
+    ],
   };
   const [postData, setPostData] = useState(null);
   useEffect(() => {
@@ -35,7 +35,11 @@ export default function SliderSection() {
             _ref
           }
         },
+        slug,
         title,
+         "categoryName": categories[] -> {
+          title,
+  },
         "name" : author->name,
       "authorImage" : author->image
     }`
@@ -57,6 +61,8 @@ export default function SliderSection() {
                     heading={post?.title}
                     authorName={post?.name}
                     authorIMage={post?.authorImage.asset._ref}
+                    postCategory={post?.categoryName}
+                    postLink={post?.slug.current}
                   />
                 ))}
             </Slider>

@@ -1,6 +1,26 @@
-import React from "react";
+import React,{useState,useEffect} from  "react";
+import SanityClient from "../../../../client.js";
+
+
+
 
 export default function Featured() {
+  const [postData, setPostData] = useState(null);
+useEffect(() => {
+  SanityClient.fetch(
+    `*[_type=="category "]{
+      title,
+      slug,
+      mainImage{
+        asset{
+        _ref,
+        }
+      }
+    }`
+  )
+    .then((data) => setPostData(data))
+    .catch(console.error);
+}, []);
   return (
     <section className="featured">
       <div className="grid grid-cols-4 p-10 gap-10">
@@ -15,7 +35,11 @@ export default function Featured() {
                 />
               </div>
               <div className="lg:col-span-1 sm:col-span-2 lg:px-5 sm:px-0">
-                <div className="feature-category-heading-block sm:text-right lg:text-left sm:mt-5 lg:mt-0"><span className="featuredCategoryText lg:text-base sm:text-lg font-bold">TECHNOLOGY</span></div>
+                <div className="feature-category-heading-block sm:text-right lg:text-left sm:mt-5 lg:mt-0">
+                  <span className="featuredCategoryText lg:text-base sm:text-lg font-bold">
+                    TECHNOLOGY
+                  </span>
+                </div>
                 <h1 className="featuredHeading lg:text-3xl sm:text-4xl leading-10">
                   Technology taking over Century blah blah
                 </h1>
@@ -44,9 +68,7 @@ export default function Featured() {
         </div>
         <div className="col-span-1 feature-right-block lg:block sm:hidden">
           <div className="featuredRightBox ">
-            <h2 className="category">
-              Categories
-            </h2>
+            <h2 className="category">Categories</h2>
             <ul>
               <li>
                 <div className="categoryItems">
