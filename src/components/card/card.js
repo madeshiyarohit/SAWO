@@ -1,6 +1,14 @@
 import React from "react";
+import ImageUrlBuilder from "@sanity/image-url";
+import SanityClient from "../../client.js";
 
-export default function Card() {
+
+const builder = ImageUrlBuilder(SanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
+
+export default function Card(props) {
   return (
     <div className="card sm:m-5 md:m-7 sm:p-3 md:p-7">
       <img src="https://picsum.photos/410/290" className="cardImage sm:mb-2.5 md:mb-8" alt="" />
